@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Siri_sm_demo", "Siri_sm_demo\Siri_sm_demo.csproj", "{6A8BCFBB-A658-4B39-BDF3-132D8373CEAC}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "wwwroot/SiriFormssys", "http://localhost:20296/SiriFormssys", "{3A8529F1-03F2-46F1-9470-BBAF7924B86D}"
+	ProjectSection(WebsiteProperties) = preProject
+		UseIISExpress = "true"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5.2"
+		Debug.AspNetCompiler.VirtualPath = "/SiriFormssys"
+		Debug.AspNetCompiler.PhysicalPath = "..\..\..\..\..\..\inetpub\wwwroot\SiriFormssys\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\SiriFormssys\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/SiriFormssys"
+		Release.AspNetCompiler.PhysicalPath = "..\..\..\..\..\..\inetpub\wwwroot\SiriFormssys\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\SiriFormssys\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "..\..\..\..\..\..\inetpub\wwwroot\SiriFormssys\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6A8BCFBB-A658-4B39-BDF3-132D8373CEAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A8BCFBB-A658-4B39-BDF3-132D8373CEAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A8BCFBB-A658-4B39-BDF3-132D8373CEAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A8BCFBB-A658-4B39-BDF3-132D8373CEAC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A8529F1-03F2-46F1-9470-BBAF7924B86D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A8529F1-03F2-46F1-9470-BBAF7924B86D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A8529F1-03F2-46F1-9470-BBAF7924B86D}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A8529F1-03F2-46F1-9470-BBAF7924B86D}.Release|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
