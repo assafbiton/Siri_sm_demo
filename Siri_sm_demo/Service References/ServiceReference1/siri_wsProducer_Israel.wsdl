@@ -31,7 +31,7 @@
   </binding>
   <service name="SiriServices">
     <port name="SiriWSPort" binding="siriWS:SiriSOAPBinding">
-      <soap:address location="http://siri.netcast.co.il/Siri/SiriServices" />
+      <soap:address location="http://siri.motrealtime.co.il:8081/Siri/SiriServices" />
     </port>
   </service>
 </definitions>

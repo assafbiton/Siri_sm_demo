@@ -41,24 +41,34 @@ namespace Siri_sm_demo
             Request.StopMonitoringRequest = new StopMonitoringRequestStructure[1];
             Request.StopMonitoringRequest[0] = smrs;
 
-            Siri_sm_demo.ServiceReference1.SOAPPortClient SS = new SOAPPortClient();
-           // SiriServices SS = new SiriServices();
-            ServiceDeliveryStructure Response = new ServiceDeliveryStructure();
-            Response = SS.GetStopMonitoringService(Request);
+            try
+            {
+                Siri_sm_demo.ServiceReference1.SOAPPortClient SS = new SOAPPortClient();
+                // SiriServices SS = new SiriServices();
+                ServiceDeliveryStructure Response = new ServiceDeliveryStructure();
+                Response = SS.GetStopMonitoringService(Request);
 
-            int bp = 0;
-
-            Print_sm_response.print_sm_respone(Response, connection.ToString());
-            Insert_Insert_siri_stations();
+                int bp = 0;
+               // Console.WriteLine(Response.ErrorCondition.Description.Value);
+                Print_sm_response.print_sm_respone(Response, connection.ToString());
+                Console.ReadKey();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+                Console.ReadKey();
+               // throw;
+            }
+           // Insert_Insert_siri_stations();
         }
 
-        protected static void Insert_Insert_siri_stations()
+        protected static void Insert_Insert_siri_stations(string StationID)
         {
            
             SqlConnection conn = new SqlConnection(connection);
             SqlCommand cmd = new SqlCommand("SP_Insert_siri_stations", conn);
             cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.AddWithValue("StationID", "11");
+            cmd.Parameters.AddWithValue("StationID", StationID);
 
 
 

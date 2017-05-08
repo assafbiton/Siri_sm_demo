@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<SavedWcfConfigurationInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="9.1" CheckSum="kknTocjDdzisIE0CwiBZ8BdD2/U=">
+<SavedWcfConfigurationInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="9.1" CheckSum="X00AkkIvKNlLgcoZwNS1hfDQBio=">
   <bindingConfigurations>
     <bindingConfiguration bindingType="basicHttpBinding" name="SiriSOAPBinding1">
       <properties>
@@ -112,10 +112,10 @@
     </bindingConfiguration>
   </bindingConfigurations>
   <endpoints>
-    <endpoint name="SiriWSPort1" contract="ServiceReference1.SOAPPort" bindingType="basicHttpBinding" address="http://siri.netcast.co.il/Siri/SiriServices" bindingConfiguration="SiriSOAPBinding1">
+    <endpoint name="SiriWSPort1" contract="ServiceReference1.SOAPPort" bindingType="basicHttpBinding" address="http://siri.motrealtime.co.il:8081/Siri/SiriServices" bindingConfiguration="SiriSOAPBinding1">
       <properties>
         <property path="/address" isComplexType="false" isExplicitlyDefined="true" clrType="System.Uri, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-          <serializedValue>http://siri.netcast.co.il/Siri/SiriServices</serializedValue>
+          <serializedValue>http://siri.motrealtime.co.il:8081/Siri/SiriServices</serializedValue>
         </property>
         <property path="/behaviorConfiguration" isComplexType="false" isExplicitlyDefined="false" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue />

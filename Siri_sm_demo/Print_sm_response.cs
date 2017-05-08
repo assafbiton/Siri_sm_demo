@@ -10,6 +10,8 @@ namespace Siri_sm_demo
 {
     class Print_sm_response
     {
+        public static string connection = System.Configuration.ConfigurationManager.ConnectionStrings["siriDB"].ConnectionString;
+
         public static void print_sm_respone(ServiceDeliveryStructure Response , string text)
         {
             try
